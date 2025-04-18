@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pipbot | Trade Smarter</title>
+
+        <!-- META -->
+        <meta name="keywords" content="Crypto wallet security, Secure digital asset storage, Cryptocurrency storage solutions, Multi-currency wallet, Easy and intuitive crypto wallet, crypto wallet, secure digital asset storage, cryptocurrency storage solutions, multi-currency wallet, easy and intuitive crypto wallet, Coin, Navox.com, Crypto, Cryptocurrency, Trade crypto, Swap crypto, Buy crypto, Sell crypto, Exchange crypto, Buy bitcoin, Buy ethereum, Receive crypto, Send Crypto, '', ., Safe Crypto, Invest Crypto, , "/>
+        <meta name="description" content="Maximize your profits with our intelligent crypto trading bot. Trade 24/7 across top exchanges using proven strategies, real-time data, and automated execution. Start trading smarter today!"/>
+        <meta name="author" content="Pipbot Dev Team"/>
+        <meta name="robots" content="max-image-preview:large"/>
+
+        <!-- OG -->
+        <meta property="og:url" content="https://www.pipbot.tech"/>
+        <meta property="og: title" content="Pipbot | Trade Smarter"/>
+        <meta property="og: image" itemprop="image" content="https://www.pipbot.tech/img/ogImage.png"/>
+        <meta property="og:image:width" content="2500">
+        <meta property="og:image:height" content="1900">
+        <meta property="og:image:alt" content="Pipbot">
+        <meta property="og: type" content="website"/>
+        <meta property="og: description" content="Maximize your profits with our intelligent crypto trading bot. Trade 24/7 across top exchanges using proven strategies, real-time data, and automated execution. Start trading smarter today!"/>
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@pipbot">
+        <meta name="twitter:creator" content="@pipbot">
+        <meta name="twitter:title" content="Pipbot | Trade Smarter">
+        <meta name="twitter:description" content="Maximize your profits with our intelligent crypto trading bot. Trade 24/7 across top exchanges using proven strategies, real-time data, and automated execution. Start trading smarter today!">
+        <meta name="twitter:image" content="https://www.pipbot.tech/img/ogImage.png">
+        <meta property="twitter:image:width" content="2500">
+        <meta property="twitter:image:height" content="1900">
+        
+        <meta name="msapplication-TileColor" content="#bfff0a"/>
+        <meta name="theme-color" content="#bfff0a"/>
+
+        <!-- SCALE -->
+        <script>
+            var viewportmeta = document.querySelector('meta[name="viewport"]');
+            if (viewportmeta) {
+                if (screen.width < 375) {
+                    var newScale = screen.width / 375;
+                    viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' +newScale + '';
+                } else {
+                    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+                }
+            }
+        </script>
+
+
+        <!-- favicon included here -->
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+        <!-- apple touch icon included here -->
+        <link rel="apple-touch-icon" href="./img/favicon.png" />
+
+        <!-- All css files included here -->
+        <!-- Bootstrap  v5.2.1 css -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <!-- slick slider css -->
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="./css/slick-theme.css" />
+        <!-- pie progress css -->
+        <link rel="stylesheet" href="./css/asPieProgress.min.css" />
+        <!-- VenoBox 2.0.4 css -->
+        <link rel="stylesheet" href="./css/venobox.min.css" />
+        <!-- Light Box css -->
+        <link rel="stylesheet" href="./css/lightbox.css" />
+        <!-- headline.css -->
+        <link rel="stylesheet" href="./css/headline.css" />
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+        <!-- custom css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href="./css/responsive.css" />
+    </head>
+
+    <body>
+        <div class="crypto-token-body">
+            <!-- Header section start -->
+            <header class="header-section v7 crypto-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container header-navbar-container">
+                                    <a class="navbar-brand header-logo" href="./">
+                                        <img src="./img/logo_long.png" alt="header-logo" width="100px"/>
+                                    </a>
+
+                                    <a id="nav-expander" class="nav-expander bar" href="#">
+                                        <img src="./img/menu.svg" alt="menu" />
+                                        <img src="./img/menu-close.svg" alt="menu" />
+                                    </a>
+
+                                    <div class="collapse navbar-collapse header-navbar-content" id="navbarSupportedContent">
+                                        <ul class="navbar-nav main-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="./">Home </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="./about">About </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="./contact">Contact </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="header-extra">
+                                            <li>
+                                                <a href="https://app.pipbot.tech" class="bg-white-btn btn-hov-effect dark">
+                                                    <span class="btn-inner">
+                                                        <span class="btn-normal-text">Start Trading</span>
+                                                        <span class="btn-hover-text">Start Trading</span>
+                                                    </span>
+                                                    <span class="round-shape"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Header section end -->
+
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu" style="background-color: #191c20;">
+                <ul class="nav-menu">
+                    
+                    <li><a style="color: #fff;" href="./">Home</a></li>
+                    <li><a style="color: #fff;" href="./about">About </a></li>
+                    <li><a style="color: #fff;" href="./contact">Contact</a></li>
+                </ul>
+                <ul class="nav-buttons">
+                    <li>
+                        <a href="https://app.pipbot.tech/" class="crypto-token-banner-btn">
+                            <span class="btn-inner">
+                                <span class="btn-normal-text">Start Trading</span>
+                                <span class="btn-hover-text">Start Trading</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="#" class="bg-blue-btn sign-in-btn">
+                            <span class="btn-inner">
+                                <span class="btn-normal-text">Sign in</span>
+                                <span class="btn-hover-text">Sign in</span>
+                            </span>
+                        </a>
+                    </li> -->
+                </ul>
+            </nav>
+            <!-- Canvas Menu end -->
+            
+            <!-- banner section start -->
+            <section class="crypto-token-banner">
+                <!-- <div class="crypto-token-banner-shape">
+                    <div class="ractangle"></div>
+                    <div class="ractangle"></div>
+                    <div class="ractangle"></div>
+                    <div class="ractangle"></div>
+                    <div class="ractangle"></div>
+                </div> -->
+                <div class="crypto-token-banner-inner">
+                    <div class="overlay">
+                        <div class="container">
+                            <div class="crypto-token-banner-text">
+                                <h1 class="quantico" data-splitting>Your Automated  <br> Trade Bot </h1>
+                                <p>Pipbot is a powerful crypto trading platform that combines cutting-edge automation, real-time market insights, and robust risk management. Free up time for things that matter.</p>
+                                <a href="#" class="crypto-token-banner-btn btn-hov-effect dark">
+                                    <span class="btn-inner">
+                                        <span class="btn-normal-text">Start Trading</span>
+                                        <span class="btn-hover-text">Start Trading</span>
+                                    </span>
+                                    <span class="round-shape"></span>
+                                </a>
+                            </div>
+                            
+                            <div class="crypto-token-banner-ball">
+                                <img src="./img/banner-ball.png" alt="img" />
+                            </div>
+                            <div class="masd-grad">
+                                <img src="./img/mesh-grad.png" alt="img" />
+                            </div>
+                            
+                            <div class="crypto-token-banner-card-section">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="row">
+                                            <div class="col-sm-7">
+                                                <div class="crypto-banner-card">
+                                                    <div class="banner-card-live">
+                                                        <p>Active Users</p>
+                                                        <div class="video__icon">
+                                                            <div class="circle--outer"></div>
+                                                            <div class="circle--inner"></div>
+                                                        </div>
+                                                    </div>
+                                                    <h2 class="quantico number-diy">
+                                                        <span class="data data-1"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <div class="crypto-banner-card">
+                                                    <div class="banner-card-live">
+                                                        <p> Trades Executed </p>
+                                                    </div>
+                                                    <h2 class="quantico number-diy">
+                                                        <span class="data dat-2">$2.28</span>M+
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-6">
+                                                <div class="crypto-banner-card2">
+                                                    <div class="banner-card-live">
+                                                        <p>Strategies Deployed</p>
+                                                    </div>
+                                                    <h2 class="quantico number-diy">
+                                                        <span class="data data-3">230</span>+
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-6">
+                                                <div class="crypto-banner-card2 mb-0">
+                                                    <div class="banner-card-live">
+                                                        <p>Rewards </p>
+                                                    </div>
+                                                    <h2 class="quantico number-diy">
+                                                        <span class="data dat-4">up to 18</span>%
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-overlay"></div>
+                </div>
+            </section>
+            <!-- banner section end -->
+            
+            <!-- banner-video-section Start -->
+            <section class="banner-video-section">
+                <div class="container">
+                    <div class="banner-video-card">
+                        <video loop autoplay playsinline muted>
+                            <source src="./img/meta_video.mp4" type="video/mp4" />
+                        </video>                        
+                        <div class="cd-intro m-0">
+                            <h2 class="cd-headline slide mb-0">
+                                <span class="wt-700 quantico">Escape to infinite</span> 
+                                <br>
+                                <span class="cd-words-wrapper dm-sans quantico">
+                                    <b class="is-visible">dimensions</b>
+                                    <b>Worlds </b>
+                                    <b>Realms </b>
+                                </span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner-video-section End -->
+            
+            <!-- key points section start -->
+            <section class="key-points-section">
+                <div class="container">
+
+                    
+                    <div class="row">
+
+                        <h1 class="text-white quantico" data-splitting style="width: 100%; text-align: center; margin-bottom: 0px;">How it works</h1>
+                        <p style=" margin-bottom: 50px; text-align: center;">Launch your first crypto trading bot in minutes — no code, no stress. </p>
+
+                        <div class="col-lg-4 col-md-6 mb-5">
+                            <div class="key-points-card">
+                                <img src="./img/blur-layer.png" alt="img" class="blur">
+                                <img src="./img/ditted_line.png" alt="img" class="doted-line">
+                                <a href="#" class="card-tag">Step 1</a>
+                                <h3 class="text-white quantico" data-splitting>Connect your wallet</h3>
+                                <p>Simply connect your crypto wallet to the platform—it's fast, secure, and free! We also suppor major exchanges like Binance, Coinbase Pro, Kraken, KuCoin & more</p>
+                                <a href="#" class="card-link">Start now <img src="./img/arrow-right-yellow.svg" alt="icon"></a>
+                                
+                                <div class="card-img">
+                                    <img src="./img/key-icon1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5">
+                            <div class="key-points-card">
+                                <img src="./img/blur-layer.png" alt="img" class="blur">
+                                <img src="./img/ditted_line.png" alt="img" class="doted-line">
+                                <a href="#" class="card-tag">Step 2</a>
+                                <h3 class="text-white quantico" data-splitting>Choose your asset</h3>
+                                <p>Select the cryptocurrency you'd like to automate. Our platform supports a wide range of popular tokens.</p>
+                                <a href="#" class="card-link">Start now <img src="./img/arrow-right-yellow.svg" alt="icon"></a>
+                                
+                                <div class="card-img">
+                                    <img src="./img/key-icon2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5">
+                            <div class="key-points-card">
+                                <img src="./img/blur-layer.png" alt="img" class="blur">
+                                <img src="./img/ditted_line.png" alt="img" class="doted-line">
+                                <a href="#" class="card-tag">Step 3</a>
+                                <h3 class="text-white quantico" data-splitting>Deploy and automate</h3>
+                                <p>Launch your bot in live mode with one click. You can monitor bot activity and performance in real time</p>
+                                <a href="#" class="card-link">Start now <img src="./img/arrow-right-yellow.svg" alt="icon"></a>
+                                
+                                <div class="card-img">
+                                    <img src="./img/key-icon3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- key points section end -->
+
+            <!-- WHY US -->
+            
+
+            <section class="crypto-features-section" style="margin-bottom: 100px;">
+                <div class="container">
+
+                    <h1 class="text-white quantico" data-splitting style="width: 100%; text-align: center; margin-bottom: 0px;margin-bottom: 50px;">Why choose Pipbot ?</h1>
+                    <div class="crypto-features-content">
+
+                        
+
+                        <div class="row">
+
+                            
+
+                            <div class="col-md-4">
+                                <div class="crypto-features-text crypto-features-text1">
+                                    <span><img src="./img/wh1.png" alt="icon" style="width: 70px;"/></span>
+                                    <h4>Fully automated</h4>
+                                    <p>Run your bots 24/7, taking advantage of market moves while you sleep.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="crypto-features-text crypto-features-text2">
+                                    <span><img src="./img/wh2.png" alt="icon" style="width: 70px;"/></span>
+                                    <h4>Customizable</h4>
+                                    <p>Fine-tune each aspect of your strategy, from indicators to stop-loss levels.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="crypto-features-text crypto-features-text3">
+                                    <span><img src="./img/wh3.png" alt="icon" style="width: 70px;"/></span>
+                                    <h4>User friendly</h4>
+                                    <p>Intuitive interface with drag-and-drop features for ease of use, whether you’re a beginner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- crypto Token features section start -->
+            <section class="crypto-token-features-section" style="margin-bottom: 200px;">
+                <div class="container" >
+                    
+                    <div class="text-with-img" data-splitting >
+                        <div class="text" style="margin-top: 100px;">
+                            <span>Avanced </span>
+                        </div>
+                        <div class="text add-img" style="margin-top: 100px;">
+                            <span>Features</span>
+                            <img src="./img/image_meta.png" alt="img" class="move-img" />
+                        </div> 
+                        
+                        
+                    </div>
+
+                    <div class="crypto-token-features-cards">
+                        <div class="stack">
+                            <div class="stack__card">
+                                <div class="card-bg">
+                                    <div class="overlay">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="title">
+                                                    <h4 class="dm-sans wt-700" data-splitting>1. Risk Management</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="crypto-token-features-text">
+                                                    <h2 data-splitting>Advanced Risk Management</h2>
+                                                    <p>Crypto markets are volatile, and risk management is essential. Pipbot gives you the tools to control your exposure and protect your capital.</p>
+                                                    <ul>
+                                                        <li> <strong>Dynamic Stop-Loss</strong> Automatically close positions at predefined price levels to lock in profits and limit losses. </li>
+                                                        <li> <strong>Max Drawdown Limits:</strong> Set maximum allowable losses per day or per bot, ensuring you don’t risk more than you’re comfortable with. </li>
+
+                                                        <li>
+                                                            <strong>Trailing Stops:</strong> Lock in profits as the market moves in your favor, but limit your losses if the market turns.
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stack__card">
+                                <div class="card-bg">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="title">
+                                                <h4 class="dm-sans wt-700" data-splitting>02 Artificial intelligence</h4>
+                                            </div>
+                                            <div class="crypto-token-features-img">
+                                                <div class="features-img-inner">
+                                                    <img src="./img/men-img.svg" alt="img" />
+                                                    <img src="./img/setting-icon.svg" alt="img"  class="setting-icon"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="crypto-token-features-text">
+                                                <h2 data-splitting>AI Enhanced Strategy</h2>
+                                                <p class="pb-4">Let AI work for you to improve your crypto trading.</p>
+                                                
+                                                <ul>
+                                                        <li> 
+                                                            <strong>AI-Powered Insights:</strong> Use market data to get trading suggestions based on current trends and predictive models.  
+                                                        </li>
+                                                        <li> 
+                                                            <strong>Smart Alerts:</strong> Set up notifications when your bot hits certain targets or when key market conditions are met.
+                                                        </li>
+
+                                                        <li>
+                                                            <strong>Strategy Marketplace:</strong> Explore, copy, and share top-performing strategies with the community of TradePilot users.
+                                                        </li>
+
+                                                </ul>
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stack__card">
+                                <div class="card-bg">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="title">
+                                                <h4 class="dm-sans wt-700" data-splitting>03 Automated Trades</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="crypto-token-features-text">
+                                                <h2 data-splitting>Automate Your Crypto Trades</h2>
+                                                <p>Take your crypto trading to the next level without the need for complicated coding or manual intervention.</p>
+                                                
+                                                <ul>
+                                                        <li> 
+                                                            <strong>Pre-Built Bots:</strong> Choose from our library of tried-and-tested strategies designed by experienced crypto traders. 
+                                                        </li>
+                                                        <li> 
+                                                            <strong>Seamless Execution:</strong> Run bots across multiple crypto exchanges simultaneously, optimizing trades in real time, 24/7.
+                                                        </li>
+
+                                                        <li>
+                                                            <strong>Adaptive Algorithms:</strong> Whether you’re trading Bitcoin, Ethereum, or altcoins, our bots adjust to current market conditions automatically.
+                                                        </li>
+
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- crypto Token features section end -->
+
+            <!-- manage-asset-section start -->
+            <!-- <section class="manage-asset-section" style="padding-top: 100px; margin-bottom: 100px;">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-6">
+                            <div class="manage-asset-left">
+                                <img src="./img/wh4.png" alt="img" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="manage-asset-right">
+                                <div class="section-title crypto md-mb-0">
+                                    <span class="sub-title">Security</span>
+                                    <h2 class=" text-white quantico">Your Security is Our Priority</h2>
+                                </div>
+                                <p>At Pipbot, your security is our top concern. We use industry-leading encryption, multi-factor authentication (MFA), and secure API connections to protect your assets and data. Your trades are safe with us.</p>
+                                
+                                <a href="https://app.pipbot.tech">Start trading <img src="./img/arrow-right-yellow.svg" alt="icon" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- manage-asset-section End -->
+
+            <!-- cross-platform-section start -->
+            <section class="cross-platform-section" style=" margin-bottom: 100px;">
+                <div class="container">
+                    <div class="cross-platform-card">
+                        <div class="section-title crypto md-mb-0 text-center">
+                            <span class="sub-title">Cross Platform</span>
+                            <h2 class="text-white quantico">Multi blockchain <br>& 1000+ tokens</h2>
+                        </div>
+                        <img src="./img/cross-platform-mesh-grad.png" alt="img" class="cross-platform-mesh-grad" />
+                    </div>
+                </div>
+            </section>
+            <!-- cross-platform-section End -->
+            
+            <!-- crypto-token-partners section start -->
+            <section class="crypto-token-partners" style="padding-top: 100px;">
+                <div class="container">
+                    <h2 class="partners-title" data-splitting>Meet the Partners</h2>
+                    <div class="green-shape">
+                        <img src="./img/green-shadow.png" alt="img" />
+                    </div>
+                    <div class="partners-list">
+                        <ul>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo1.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo2.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo3.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo4.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo5.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo6.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo7.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo9.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo11.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="partners-logo">
+                                    <img src="./img/logo12.svg" alt="logo">
+                                    <div class="btn-outline">
+                                        <img src="./img/round-circle.png" alt="img" />
+                                    </div>
+                                    <span class="round"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div>
+                        <a href="https://app.pipbot.tech" class="become-investor-btn btn-hov-effect">
+                            <span>Get started</span> <img src="./img/arrow-right-yellow.svg" alt="icon" />
+                            <span class="round-shape"></span>
+                        </a>
+                    </div> -->
+                </div>
+            </section>
+            <!-- crypto-t <img src="" alt="">oken-partners section End -->
+
+            <!-- Lets Talk Section Start-->
+        <section class="lets-talk-section" style="padding-top: 100px;">
+            <div class="container" >
+                <div class="lets-talk-content" style="background-color: #191c20;">
+                    <div class="row" >
+                        <div class="col-md-6">
+                            <div class="lets-talk-text">
+                                <h2 class="text-white quantico">
+                                    Start for free today
+                                </h2>
+                                <p style="margin-top: -20px; margin-bottom: 20px;">Join a global movement of crypto traders automating their trades and earning amazing profits </p>
+                                <a href="https://app.pipbot.tech" class="lets-talk-btn" style="margin-top: 50px; background-color: #bfff0a;">Start trading <img src="./img/arrow-right-yellow.svg" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lets-talk-img">
+                                <img src="./img/lets-talk-img.svg" alt="img" /> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Lets Talk Section End-->
+            
+            <!-- scroll-text-section start -->
+            <section class="scroll-text-section" style="margin-bottom: 100px;">
+                <div class="scroll-text-inner">
+                    <ul class="scroll-text-list">
+                        <li>Start </li>
+                        <li>Simple.</li>
+                        <li>Scale</li>
+                        <li>Smart.</li>
+                        <li>Automate</li>
+                        <li>Your</li>
+                        <li>Crypto</li>
+                        <li>Edge.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- scroll-text-section end -->
+            
+            
+            
+            
+            
+            <!-- Footer section start -->
+            <section class="token-footer-section">
+                <div class="overlay">
+                    <div class="overlay2">
+                        <div class="container">
+                            
+                            
+                            
+                            <div class="footer-shape">
+                                <img src="./img/footer-shape.png" alt="img"/>
+                            </div>
+
+
+                            <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="footer-copyright crypto" style="width: 100%; text-align: center; color: white; margin-bottom: 50px;">
+                                    © 2025, <a href="#./">Pipbot.</a> All Rights Reserved.
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+                
+
+            </section>
+            <!-- Footer section End -->
+        </div>
+
+        <!-- scroll top section start -->
+        <div class="staco-scroll-top crypto-token">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+            <div class="staco-scroll-top-icon crypto-token">
+                <span class="iconify" data-icon="mdi:arrow-up"></span>
+            </div>
+        </div>
+        <!-- scroll top section end -->
+        
+        <!-- All javascript files included here -->
+        <!-- jQuery v3.6.1 js -->
+        <script src="./js/jquery-3.6.1.min.js"></script>
+        <!-- popper v2.11.6 js -->
+        <script src="./js/popper.min.js"></script>
+        <!-- Bootstrap  v5.2.1 js -->
+        <script src="./js/bootstrap.min.js"></script>
+        <!-- masonry js -->
+        <script src="./js/masonry.pkgd.min.js"></script>
+        <!-- Iconify v3.0.0 js -->
+        <script src="./js/iconify.min.js"></script>
+        <!-- modernizr js -->
+        <script src="./js/modernizr.js"></script>
+        <!-- slick slider js -->
+        <script src="./js/slick.min.js"></script>
+        <!-- swiper slider js --->
+        <script src="./js/swiper.min.js"></script>
+        <!-- pie progress js -->
+        <script src="./js/jquery-asPieProgress.js"></script>
+        <!-- VenoBox 2.0.4 js -->
+        <script src="./js/venobox.min.js"></script>
+        <!-- Splitting js -->
+        <script src="./js/splitting.js"></script>
+        <script src="./js/splitting-out.js"></script>
+        <!-- jquery.rollNumber js -->
+        <script src="./js/jquery.rollNumber.js"></script>
+        <!-- parallax js -->
+        <script src="./js/parallax.min.js"></script>
+        <!-- ScrollTrigger 3.11.2 js -->
+        <script src="./js/ScrollTrigger.min.js"></script>
+        <!-- Headline.js -->
+        <script src="./js/headline.js"></script>
+        <!-- Image Light box -->
+        <script src="./js/lightbox.js"></script>
+        <!-- sticky sidebar js -->
+        <script src="./js/sticky-sidebar.js"></script>
+        <!-- Image Loaded js -->
+        <script src="./js/imagesloaded.pkgd.min.js"></script>
+        <!-- isotop -->
+        <script src="./js/isotope.pkgd.min.js"></script>
+        <!-- darkMood tsx -->
+        <script src="./js/dark-mood-js.txt"></script>
+        <!-- custom js -->
+        <script src="./js/main.js"></script>        
+        
+    </body>
+</html>
