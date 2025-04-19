@@ -25,15 +25,15 @@ sendBtn.addEventListener("click", function (e) {
   sendBtn.disabled = true;
   sendBtn.textContent = "Sending message...";
    
-  let timeStamp = new Date();
+  let timeStampM = new Date();
 
   axios
     .post("https://api.pipbot.tech/v1/contact-mail", {
       fullName: fullName.value,
       uEmail: email.value,
       message: message.value,
-      phone: phone,
-      timeStamp: String(timeStamp)
+      phone: phone.value,
+      timeStamp: String(timeStampM)
     })
     .then(function (response) {
        sendBtn.textContent = "Message sent successfully..."
